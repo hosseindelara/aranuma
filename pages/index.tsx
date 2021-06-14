@@ -63,11 +63,10 @@ export default function Home(props: any): JSX.Element {
     }
   }
 
-  const handelPagination = (a: any, number: number): void => {
+  const handelPagination = (number: number): void => {
 
     setDisabledpaginton(true)
-    dataFetchin(number, data.per_page)
-
+    dataFetchin(number, data.per_page);
   }
 
   const handelShowitem = (value: number): void => setDisplayitem(value)
